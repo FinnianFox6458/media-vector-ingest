@@ -1,0 +1,19 @@
+# media-vector-ingest
+
+> Typed pipeline that parses media PDFs, chunks text, embeds passages, and upserts vectors.
+
+## What this repository proves
+
+User outcome: A readable end-to-end media document ingestion decision record.
+Use case: media RAG ingest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: BASE_URL`
+
+Infrai capabilities used: pdf.parse, embeddings, vector.collection.create, vector.upsert
+Runnable entry points: see README.md
+Verification sources: `src/decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

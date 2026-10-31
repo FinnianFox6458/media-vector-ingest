@@ -1,0 +1,1 @@
+{"name":"media-vector-ingest","version":"1.0.0","type":"module","scripts":{"start":"tsx src/media_ingest.ts","test":"tsx src/decision.test.ts","typecheck":"tsc --noEmit"},"dependencies":{"openai":"^4.0.0","zod":"^3.0.0"},"devDependencies":{"tsx":"^4.0.0","typescript":"^5.0.0"}}
